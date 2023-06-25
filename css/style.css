@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Raleway:wght@100;200;300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.heading {
+  text-align: center;
+  font-size: 36px;
+  padding: 22px 0;
+  color: teal;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(280px, 1fr)
+  ); /* repeat each card automatically calculate width, for each card min width is 220px and maximum width is automatically calculated. */
+  grid-gap: 15px; /* apply 15px gap between the card on each side */
+  padding: 20px; /* padding around the container */
+}
+
+.card-container .card {
+  padding: 10px;
+  /* border: 3px solid teal; */
+  border-radius: 5px;
+  text-align: center;
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-container .card .card-icon {
+  margin-top: 10px;
+}
+
+.card-container .card .card-icon span {
+  margin: 10px 0; /* apply margin 10px on Y-axis and 0px on X-axis  */
+  color: teal;
+  font-size: 32px;
+}
+
+.card-container .card .card-title {
+  color: teal;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.card-container .card p {
+  font-size: 14px;
+  color: dimgray;
+  padding: 10px;
+}
+
+.card-container .card a {
+  color: teal;
+  text-decoration: none; /* removes underline */
+  display: block; /* making it block will make the anchor occupy the whole row width */
+  font-size: 18px;
+  padding: 10px 0px; /* padding Y-axis 10px and X-axis 0px */
+}
+
+.card-container .card a:hover {
+    background-color:#eee;
+    border-radius:7%;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
